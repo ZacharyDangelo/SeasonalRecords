@@ -9,6 +9,7 @@ body{
     background:green;
     display:flex;
     flex: 1;
+    margin-bottom:0;
 }
 
 .header-content{
@@ -48,4 +49,42 @@ body{
     width: 86px;
     padding-left: 64px;
     padding-right: 64px;
+}
+
+.hero-content{
+    margin:0;
+    padding:0;
+    
+}
+
+.hero-item{
+    float:left;
+    margin-right:-100%;
+    position:relative;
+    display:block;
+    z-index: 1;
+    width:100%;
+}
+.hero-item img{
+    height: 840px;
+    width:100%;
+}
+
+.hero-content .title{
+    position:relative;
+    z-index: 9;
+    padding-top: 600px;
+    padding-left: 60px;
+    font-size: 128px;
+}
+
+.hero-content a{
+    text-decoration: none;
+    color:white;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
 }
