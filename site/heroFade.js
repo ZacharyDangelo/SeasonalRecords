@@ -10,28 +10,32 @@ main();
 function main(){
     albumCovers.forEach(
         function(currentValue, currentIndex, listObj){
-            if(currentIndex != 0) 
+            if(currentIndex != 0){
                 currentValue.style.opacity = 0;
+                currentValue.style.zIndex = -1;
+            }
+            else{
+                currentValue.style.zIndex = 100;
+            }
         }
     )    
     
-    setInterval(rotateCovers,10000);
+    setInterval(rotateCovers,20000);
 
 }
 
 function rotateCovers(){
-    console.log("rotating");
     fade(albumCovers[currentCoverIndex]);
     unfade(getNextCover());
 }
 
 function fade(element){
+    element.style.zIndex = -1;
     var op = 1;
     var timer = setInterval(function () {
         if(op <= 0.1){
             clearInterval(timer);
             op = 0;
-            console.log("clearing");
         }
         element.style.opacity = op;
         op -= op * .1;
@@ -39,11 +43,11 @@ function fade(element){
 }
 
 function unfade(element) {
+    element.style.zIndex = 100;
     var op = 0.1;  // initial opacity
     element.style.display = 'block';
     var timer = setInterval(function () {
         if (op >= 1){
-            console.log("clearing");
             clearInterval(timer);
         }
         element.style.opacity = op;
