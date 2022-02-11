@@ -28,12 +28,12 @@ function rotateCovers(){
 function fade(element){
     var op = 1;
     var timer = setInterval(function () {
-        if(op <= 0){
+        if(op <= 0.1){
             clearInterval(timer);
-            element.style.display = 'none';
+            op = 0;
+            console.log("clearing");
         }
         element.style.opacity = op;
-        element.style.filer = 'alpha(opacity=' + op * 100 +")";
         op -= op * .1;
     }, 100);
 }
@@ -43,10 +43,10 @@ function unfade(element) {
     element.style.display = 'block';
     var timer = setInterval(function () {
         if (op >= 1){
+            console.log("clearing");
             clearInterval(timer);
         }
         element.style.opacity = op;
-        element.style.filter = 'alpha(opacity=' + op * 100 + ")";
         op += op * 0.1;
     }, 100);
 }
