@@ -120,3 +120,39 @@ ul{
     flex-basis: auto;
     justify-content: space-around;
 }
+
+.artists{
+    background: white;
+    margin-top:0;
+    height: 640px;
+}
+
+.artists-content{
+    display: flex;
+    padding-top: 64px;
+    justify-content: center;
+}
+
+.artists h2{
+    padding-top: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 64px;
+}
+
+.artist-item {
+    display:flex;
+    flex-basis: auto;
+    flex-direction: column;
+    width: 240px;
+    height: 240px;
+}
+
+.artist-item img{
+    width: 240px;
+    height: 240px;
+}
+
+.artist-item h3{
+    text-align: center;
+}
