@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #dfdfdf;
+    font-family: 'Roboto', sans-serif;
+}
+
+.header{
+    width:100%;
+    height: 6.5em;
+    background: white;
+    display:flex;
+    flex: 1;
+    margin-bottom:0;
+}
+
+.header-content{
+    width:100%;
+    display:flex;
+    align-items: center;
+    gap: 24px;
+    flex:1;
+    margin-left: 15%;
+}
+
+.header-content a{
+    font-size: 36px;
+    text-decoration: none;
+    transition: .25s;
+    color: Black;
+    padding-left: 16px;
+    padding-right: 16px;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.header-content a:hover{
+    transition: .25s;
+    color: rgb(70, 70, 70);
+    text-decoration: underline;
+}
+
+.header .social-media{
+    display:flex;
+    align-items: center;
+    margin-left: auto;
+    gap: 24px;
+    flex: 1;
+    flex-direction:row-reverse;
+    margin-right: 15%;
+}
+
+.social-media img{
+    height: 32px;
+    width: 32px;
+}
+
+#logo{
+    height:86px;
+    width: 86px;
+    padding-left: 64px;
+    padding-right: 64px;
+}
+
+.hero-content{
+    margin:0;
+    padding:0;
+}
+
+.hero{
+    width: 100%;
+    overflow: hidden;
+    margin-bottom:0;
+}
+
+.hero-item{
+    float:left;
+    margin-right:-100%;
+    position:relative;
+    display:block;
+    width:100%;
+}
+
+.fade-item{
+    position:relative;
+    
+}
+
+.hero-item img{
+    height: 840px;
+    width:100%;
+}
+
+.hero-content .title{
+    position:relative;
+    z-index: 9;
+    padding-top: 600px;
+    padding-left: 60px;
+    font-size: 112px;
+}
+
+.hero-content a{
+    text-decoration: none;
+    color:white;
+    position:relative;
+}
+
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+
+
+.playlist{
+    background: #dfdfdf;
+    margin-top: 0;
+}
+
+h2{
+    margin-top: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 64px;
+    font-family: 'Anton', sans-serif;
+}
+
+.playlist-content{
+    padding-top: 64px;
+    display:flex;
+    flex-basis: auto;
+    justify-content: space-around;
+}
+
+.artists{
+    background: white;
+    margin-top:0;
+    height: 640px;
+}
+
+.artists-content{
+    display: flex;
+    padding-top: 64px;
+    justify-content: center;
+    gap: 28px;
+}
+
+h2{
+    padding-top: 12px;
+    margin-bottom: 24px;
+    text-align: center;
+    font-size: 64px;
+}
+
+.artist-item {
+    display:flex;
+    flex-basis: auto;
+    flex-direction: column;
+    width: 240px;
+    height: 240px;
+}
+
+.artist-item img{
+    width: 240px;
+    height: 240px;
+}
+
+.artist-item h3{
+    text-align: center;
+}
+
+
+.email-form{
+    display:flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+
+.email-form button{
+    border-radius: 0;
+    border: 4px solid rgb(0, 199, 0);
+    background-color: rgb(0, 199, 0);
+    font-size: 16px;
+}
+
+.email-form button:hover{
+    background-color: rgb(241, 241, 241);
+}
+
+.email-form input{
+    font-size: 16px;
+    height: 32px;
+    border: none;
+}
+
+.call-to-action .social-media{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    gap: 24px;
+    flex: 1;
+}
+
+.footer{
+    background-color: black;
+}
+
+.footer img{
+    display: block;
+    margin-left:auto;
+    margin-right:auto;
+    width: 33%;
+    height:33%;
+}
+
+.footer hr{
+    color:white;
+}
+
+.footer footer{
+    border-top: 1px solid #222222;
+    padding-top: 12px;
+    display: flex;
+    justify-content: center;
+    color: rgb(165, 165, 165);
+    gap: 128px;
+}
+
