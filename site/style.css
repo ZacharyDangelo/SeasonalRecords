@@ -2,6 +2,7 @@ body{
     margin: 0;
     padding: 0;
     background: #dfdfdf;
+    font-family: 'Roboto', sans-serif;
 }
 
 .header{
@@ -25,9 +26,17 @@ body{
 .header-content a{
     font-size: 36px;
     text-decoration: none;
+    transition: .25s;
     color: Black;
     padding-left: 16px;
     padding-right: 16px;
+    font-family: 'League Gothic', sans-serif;
+}
+
+.header-content a:hover{
+    transition: .25s;
+    color: rgb(70, 70, 70);
+    text-decoration: underline;
 }
 
 .header .social-media{
@@ -112,6 +121,7 @@ h2{
     margin-bottom: 24px;
     text-align: center;
     font-size: 64px;
+    font-family: 'Anton', sans-serif;
 }
 
 .playlist-content{
@@ -214,7 +224,7 @@ h2{
     padding-top: 12px;
     display: flex;
     justify-content: center;
-    color: white;
+    color: rgb(165, 165, 165);
     gap: 128px;
 }
 
